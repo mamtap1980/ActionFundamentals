@@ -21,6 +21,7 @@ jobs:
         run: |
           echo "The job was triggered by the ${{ github.repository }} repository."
       - name: List Repository Files
+        shell: pwsh
         run: tree
 
         
