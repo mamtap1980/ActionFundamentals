@@ -21,10 +21,7 @@ jobs:
         run: |
           echo "The job was triggered by the ${{ github.repository }} repository."
       - name: List Repository Files
-        uses: mirko-felice/list-files-action@v3.0.5
-        with:
-          repo: ${{ github.repository }}
-          path: "."
-          ext: ".*"
+        run: |
+          tree
 
         
