@@ -1,0 +1,18 @@
+name: GithubActionsDemo
+
+on:
+  push:
+    branches:
+      - main
+    paths: '!*.github/**'
+  schedule:
+    - cron: '15 6 * * SUN'
+
+  workflow_dispatch:
+
+jobs:
+  Build: 
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'The job was triggered by a ${{ github.event_name }} event."
+      - run: echo 'The job was triggered by the ${{ github.repository }} repository."
