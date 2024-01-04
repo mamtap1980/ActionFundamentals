@@ -20,6 +20,7 @@ jobs:
       - name: List Repository Name
         run: |
           echo "The job was triggered by the ${{ github.repository }} repository."
-          
+      - name: List Repository Files
+        run: git ls-tree
 
         
