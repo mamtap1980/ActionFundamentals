@@ -18,8 +18,6 @@ jobs:
         run: echo 'The job was triggered by a ${{ github.event_name }} event.'
       - name: List Repository Name
         run: echo 'The job was triggered by the ${{ github.repository }} repository.'
-      - name: List Files in Repository
-      - run: git ls-files
           
 
         
