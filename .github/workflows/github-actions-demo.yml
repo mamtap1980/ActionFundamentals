@@ -22,6 +22,5 @@ jobs:
           echo "The job was triggered by the ${{ github.repository }} repository."
       - name: List Repository Files
         run: tree
-        working-directory: ${{ github.repository }}
 
         
