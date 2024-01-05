@@ -20,8 +20,8 @@ jobs:
       - name: List Repository Name
         run: |
           echo "The job was triggered by the ${{ github.repository }} repository."
+      - uses: actions/checkout@v3.3.0
       - name: List Repository Files
-        shell: pwsh
-        run: tree
-
-        
+        run: |
+          echo "The repository ${{ github.repository }} contains the following files:"
+          tree
